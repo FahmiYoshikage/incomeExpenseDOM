@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.title h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: #4CAF50;
+}
+
+.transactionForm {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.transactionForm label {
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.transactionForm input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.submitForm {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.submitForm #incomeButton {
+    flex: 1;
+    text-align: center;
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.submitForm #incomeButton:hover {
+    background: #45A049;
+}
+
+.submitForm #expenseButton {
+    flex: 1;
+    text-align: center;
+    background: #f44336;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.submitForm #expenseButton:hover {
+    background: #e53935;
+}
+
+.transactionList {
+    margin-top: 20px;
+}
+
+.transactionList h2 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 5px;
+    color: #4CAF50;
+}
+
+.transactionListIncome, .transactionListExpense {
+    margin-bottom: 20px;
+}
+
+.transactionList ul {
+    list-style: none;
+    padding: 0;
+}
+
+.transactionList ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 8px;
+    background: #f9f9f9;
+}
+
+.transactionList ul li span {
+    font-size: 1rem;
+}
