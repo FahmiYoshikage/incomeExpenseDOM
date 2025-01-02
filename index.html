@@ -3,11 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Income & Expense</title>
 </head>
 <body>
     <div class="container">
-        
+        <div class="container-item">
+            <div class="title">
+                <h1>Income & Expense</h1>
+            </div>
+            <div class="transactionForm">
+                <label for="inputTransaction">Jenis Transaksi</label>
+                <input type="text" name="transaction" id="inputTransaction" placeholder="Example: Buy a book">
+            </div>
+            <div class="transactionForm">
+                <label for="inputAmount">Jumlah Transaksi</label>
+                <input type="number" name="amount" id="inputAmount" placeholder="Rp. ">
+            </div>
+            <div class="submitForm">
+                <div id="incomeButton">Income</div>
+                <div id="expenseButton">Expense</div>
+            </div>
+            <div class="transactionList">
+                <h2>Transaction List</h2>
+                <div class="transactionListIncome">
+                    <h3>Income</h3>
+                    <ul id="incomeTransaction">
+                        <li>
+                            <span>Transaction</span>
+                            <span>Rp. 100.000</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="transactionListExpense">
+                    <h3>Expense</h3>
+                    <ul id="expenseTransaction">
+                        <li>
+                            <span>Transaction</span>
+                            <span>Rp. 50.000</span>
+                        </li>
+                    </ul>  
+                </div>
+            </div>
+        </div>
     </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
