@@ -1,5 +1,3 @@
-const fs = require('fs');
-
 // DOM getElementById
 let incomeButton = document.getElementById('incomeButton');
 let expenseButton = document.getElementById('expenseButton');
@@ -18,10 +16,6 @@ function updateTotalBalance() {
     totalBalanceElement.innerHTML = `Rp. ${totalBalance},00`;
 }
 
-function saveData() {
-    fs.writeFileSync('data.json', JSON.stringify(Transaction));
-}
-
 // DOM addEventListener
 incomeButton.addEventListener('click', () => {
     let inputTransaction = document.getElementById('inputTransaction').value;
@@ -29,9 +23,6 @@ incomeButton.addEventListener('click', () => {
     let incomeTransaction = document.getElementById('incomeTransaction');
 
     incomeTransaction.innerHTML = '';
-
-    let id;
-    
 
     let tempObj = {
         transaction: inputTransaction,
@@ -47,7 +38,6 @@ incomeButton.addEventListener('click', () => {
     })
     totalBalance += +inputAmount;
     updateTotalBalance();
-    saveData();
 });
 
 expenseButton.addEventListener('click', () => {
@@ -71,7 +61,6 @@ expenseButton.addEventListener('click', () => {
     })
     totalBalance -= +inputAmount;
     updateTotalBalance();
-    saveData();
 })
 
 // Call Function
